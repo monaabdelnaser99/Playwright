@@ -9,7 +9,7 @@
     "pretest": "npm run clean:reports",
     "posttest": "npm run generate:reports",
     "script:to:run": "npx playwright test pom",
-    "test": "npm run script:to:run || npm run posttest"
+    "test": "npm run script:to:run "
   },
   "keywords": [],
   "author": "",

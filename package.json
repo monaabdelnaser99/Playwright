@@ -2,7 +2,7 @@
   "name": "playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "clean:reports": "rimraf allure-report allure-results && mkdirp allure-report allure-results",
     "generate:reports": "npx allure generate ./allure-results --clean",
     "open:reports": "npx allure open ./allure-report",

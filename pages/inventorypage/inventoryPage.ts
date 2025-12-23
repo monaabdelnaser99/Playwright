@@ -3,6 +3,15 @@ import { expect } from "@playwright/test";
 import BasePage from "../basePage";
 
 export default class InventoryPage extends BasePage {
+  static expectLoaded() {
+    throw new Error("Method not implemented.");
+  }
+  static addByName(arg0: string) {
+    throw new Error("Method not implemented.");
+  }
+  static openDetails(arg0: string) {
+    throw new Error("Method not implemented.");
+  }
   private readonly title = this.page.locator('span.title', { hasText: 'Products' });
   private readonly sortSelect = this.page.getByTestId('product_sort_container');
 

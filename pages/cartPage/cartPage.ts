@@ -2,6 +2,12 @@ import { expect } from "@playwright/test";
 import BasePage from "../basePage";
 
 export default class CartPage extends BasePage {
+  static expectLoaded() {
+    throw new Error("Method not implemented.");
+  }
+  static expectItemsPresent(arg0: string[]) {
+    throw new Error("Method not implemented.");
+  }
   private readonly title = this.page.locator('span.title', { hasText: 'Your Cart' });
 private readonly checkoutButton =
   this.page.locator('#checkout');

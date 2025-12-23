@@ -6,15 +6,18 @@ import CheckoutInfoPage from '../pages/checkoutInfoPage/checkoutInfoPage';
 import CheckoutOverviewPage from '../pages/checkoutOverviewPage/checkoutOverviewPage';
 import CheckoutCompletePage from '../pages/checkoutCompletePage/checkoutCompletePage';
 import InventoryPage from '../pages/inventorypage/inventoryPage';
+import BurgerMenu from '../pages/burgerMenu/burgerMenu';
+import ProductDetailsPage from '../pages/productDetailsPage/productDetailsPage';
+
 
 
 type pages={
     loginPage: LoginPage;
     productPage: ProductPage;
    // header: Header;
-    //burgerMenu: BurgerMenu;
+    burgerMenu: BurgerMenu;
     inventoryPage: InventoryPage;
-    //productDetailsPage: ProductDetailsPage;
+    productDetailsPage: ProductDetailsPage;
     cartPage: CartPage;
     checkoutInfoPage: CheckoutInfoPage;
     checkoutOverviewPage: CheckoutOverviewPage;

@@ -14,7 +14,6 @@ import ProductDetailsPage from '../pages/productDetailsPage/productDetailsPage';
 type pages={
     loginPage: LoginPage;
     productPage: ProductPage;
-   // header: Header;
     burgerMenu: BurgerMenu;
     inventoryPage: InventoryPage;
     productDetailsPage: ProductDetailsPage;
@@ -22,7 +21,6 @@ type pages={
     checkoutInfoPage: CheckoutInfoPage;
     checkoutOverviewPage: CheckoutOverviewPage;
     checkoutCompletePage: CheckoutCompletePage;
-    //footer: Footer;
 }
 
 const testPages = baseTest.extend<pages>({
@@ -32,18 +30,16 @@ const testPages = baseTest.extend<pages>({
     productPage: async({page}, use)=>{
         await use(new ProductPage(page));
     },
-   // header: async({page}, use)=>{
-       // await use(new Header(page));
-    //},
-   // burgerMenu: async({page}, use)=>{
-       // await use(new BurgerMenu(page));
-   // },
+   
+   burgerMenu: async({page}, use)=>{
+        await use(new BurgerMenu(page));
+   },
     inventoryPage: async({page}, use)=>{
         await use(new InventoryPage(page));
     },
-    //productDetailsPage: async({page}, use)=>{
-      //  await use(new ProductDetailsPage(page));
-   // },
+    productDetailsPage: async({page}, use)=>{
+       await use(new ProductDetailsPage(page));
+   },
     cartPage: async({page}, use)=>{
         await use(new CartPage(page));
     },
@@ -56,9 +52,7 @@ const testPages = baseTest.extend<pages>({
     checkoutCompletePage: async({page}, use)=>{
         await use(new CheckoutCompletePage(page));
     },
-   // footer: async({page}, use)=>{
-       // await use(new Footer(page));
-   // },
+
 })
 
 export const test = testPages;

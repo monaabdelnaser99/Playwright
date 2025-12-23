@@ -3,6 +3,12 @@ import { expect } from "@playwright/test";
 import BasePage from "../basePage";
 
 export default class InventoryPage extends BasePage {
+  clickonCartBtn() {
+      throw new Error("Method not implemented.");
+  }
+  removeProductFromCart() {
+      throw new Error("Method not implemented.");
+  }
   static expectLoaded() {
     throw new Error("Method not implemented.");
   }

@@ -1,4 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","11204","E2E","webkit","2025-12-22","passed","2025-12-22","","e2e.spec.ts","",""
-"","10280","E2E","firefox","2025-12-22","passed","2025-12-22","","e2e.spec.ts","",""
-"","9693","E2E","chromium","2025-12-22","passed","2025-12-22","","e2e.spec.ts","",""
+"","4148","E2E","chromium","2025-12-23","passed","2025-12-23","","e2e.spec.ts","",""
